@@ -4223,7 +4223,7 @@ function downloadConfigFromCDN(savedSegmentConfigMap) {
         return __generator(this, function (_c) {
             switch (_c.label) {
                 case 0:
-                    segmentationBaseUrl = "".concat(configBaseUrl, "/").concat(appApiKey).concat(selfHostingEndPoints.SELF_HOSTING, "/segmentation.json?v=0.33909022822341783");
+                    segmentationBaseUrl = "".concat(configBaseUrl, "/").concat(appApiKey).concat(selfHostingEndPoints.SELF_HOSTING, "/segmentation.json?v=0.4267842894667331");
                     _c.label = 1;
                 case 1:
                     _c.trys.push([1, 6, , 7]);
@@ -4239,7 +4239,7 @@ function downloadConfigFromCDN(savedSegmentConfigMap) {
                             return __generator(this, function (_a) {
                                 switch (_a.label) {
                                     case 0:
-                                        configUrl = "".concat(configBaseUrl, "/").concat(appApiKey).concat(selfHostingEndPoints.SELF_HOSTING).concat(selfHostingEndPoints.SEGMENT_CONFIG_FOLDER).concat(segmentObject === null || segmentObject === void 0 ? void 0 : segmentObject.segmentId, ".json?v=0.33909022822341783");
+                                        configUrl = "".concat(configBaseUrl, "/").concat(appApiKey).concat(selfHostingEndPoints.SELF_HOSTING).concat(selfHostingEndPoints.SEGMENT_CONFIG_FOLDER).concat(segmentObject === null || segmentObject === void 0 ? void 0 : segmentObject.segmentId, ".json?v=0.4267842894667331");
                                         return [4, fetch(configUrl)];
                                     case 1:
                                         configResponse = _a.sent();
@@ -4842,7 +4842,6 @@ function receiveDataFromNativeLayer(message) {
                                 userProps = (_a = message === null || message === void 0 ? void 0 : message.data) === null || _a === void 0 ? void 0 : _a.userProps;
                                 customProperties = __assign(__assign({}, customProperties), userProps);
                                 defaultProperties = __assign({}, (_b = message === null || message === void 0 ? void 0 : message.data) === null || _b === void 0 ? void 0 : _b.defaultProps);
-                                console.log('SetUserProps', {userProps, customProperties, defaultProperties});
                                 saveTheLatestProps(traceId);
                                 saveTheLatestStateChange(traceId);
                                 clearEveryThing(true, traceId);
