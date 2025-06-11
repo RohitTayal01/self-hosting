@@ -4223,7 +4223,7 @@ function downloadConfigFromCDN(savedSegmentConfigMap) {
         return __generator(this, function (_c) {
             switch (_c.label) {
                 case 0:
-                    segmentationBaseUrl = "".concat(configBaseUrl, "/").concat(appApiKey).concat(selfHostingEndPoints.SELF_HOSTING, "/segmentation.json?v=0.0949144857043811");
+                    segmentationBaseUrl = "".concat(configBaseUrl, "/").concat(appApiKey).concat(selfHostingEndPoints.SELF_HOSTING, "/segmentation.json?v=0.8941102478676715");
                     _c.label = 1;
                 case 1:
                     _c.trys.push([1, 6, , 7]);
@@ -4239,7 +4239,7 @@ function downloadConfigFromCDN(savedSegmentConfigMap) {
                             return __generator(this, function (_a) {
                                 switch (_a.label) {
                                     case 0:
-                                        configUrl = "".concat(configBaseUrl, "/").concat(appApiKey).concat(selfHostingEndPoints.SELF_HOSTING).concat(selfHostingEndPoints.SEGMENT_CONFIG_FOLDER).concat(segmentObject === null || segmentObject === void 0 ? void 0 : segmentObject.segmentId, ".json?v=0.0949144857043811");
+                                        configUrl = "".concat(configBaseUrl, "/").concat(appApiKey).concat(selfHostingEndPoints.SELF_HOSTING).concat(selfHostingEndPoints.SEGMENT_CONFIG_FOLDER).concat(segmentObject === null || segmentObject === void 0 ? void 0 : segmentObject.segmentId, ".json?v=0.8941102478676715");
                                         return [4, fetch(configUrl)];
                                     case 1:
                                         configResponse = _a.sent();
